@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <PackageID>LeForg.Clarp</PackageID>
     <Title>Clarp</Title>
-    <Version>0.1.0</Version>
+    <Version>1.2.1</Version>
     <Authors>Ash Entwisle</Authors>
     <Description>Clarp is a C# library for parsing command line arguments.</Description>
     <Company>LeForg</Company>
@@ -20,7 +20,7 @@
     <ProjectURL>https://github.com/ash-entwisle/clarp-csharp</ProjectURL>
     <RepositoryURL>https://github.com/ash-entwisle/clarp-csharp</RepositoryURL>
     <PackageTags>command-line arguments parsing</PackageTags>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated version to match ts</PackageReleaseNotes>
   </PropertyGroup>
 
       <ItemGroup>
