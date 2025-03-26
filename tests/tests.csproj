@@ -5,6 +5,8 @@
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <EntryPoint>LeForg.Clarp.Tests.Program</EntryPoint>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +16,10 @@
 
   <ItemGroup>
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\clarp\clarp.csproj" />
   </ItemGroup>
 
 </Project>
