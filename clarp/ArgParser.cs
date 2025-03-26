@@ -56,11 +56,12 @@ public class ArgParser
         Options = [];
         Passthrough = [];
         Raw = [.. Environment.GetCommandLineArgs().Skip(1)];
+        Pipe = string.Empty;
 
-        using (var reader = new StreamReader(Console.OpenStandardInput()))
-        {
-            Pipe = reader.ReadToEnd().Trim();
-        }
+        // using (var reader = new StreamReader(Console.OpenStandardInput()))
+        // {
+        //     Pipe = reader.ReadToEnd().Trim();
+        // }
 
         Parse();
     }
@@ -117,5 +118,10 @@ public class ArgParser
                 Args.Add(arg);
             }
         }
+    }
+
+    public override string ToString()
+    {
+        return $"Args: {string.Join(", ", Args)}, \nFlags: {string.Join(", ", Flags)}, \nOptions: {string.Join(", ", Options)}, \nPassthrough: {string.Join(", ", Passthrough)}, \nPipe: \n{Pipe}";
     }
 }
