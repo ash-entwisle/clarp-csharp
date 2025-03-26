@@ -25,7 +25,7 @@ class Program {
 ## Format
 
 ```bash
-echo \"This is Piped Data\" | command arg1 -flag1 arg2 --option1 "option1 value" -flag2  -- passthrough arguments "are useful"
+echo "This is Piped Data" | command arg1 -flag1 arg2 --option1 "option1 value" -flag2  -- passthrough arguments "are useful"
 ```
 
 ### Arguments
