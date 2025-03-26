@@ -11,7 +11,15 @@ TODO
 ### Usage
 
 ```csharp
-// TODO
+using LeForg.Clarp.ArgParser;
+
+class Program {
+    static void Main(string[] args) {
+        ArgParser p = new();
+
+        Console.WriteLine(p.ToString());
+    }
+}
 ```
 
 ## Format
@@ -55,4 +63,5 @@ It is not processed by the parser and stored in `this.pipe`.
 ## Testing
 
 Running `make test` will test ArgParser with the arguments defined [here](#format).
-It should say all tests have passed (you can find the tests in `./tests/Tests.cs`).
+It should say all tests have passed (you can find the tests in `./example/Program.cs`).
+There is a bug where MSTest cant see command line args passed to it, so the tests are run in the example project.
