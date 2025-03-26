@@ -56,12 +56,11 @@ public class ArgParser
         Options = [];
         Passthrough = [];
         Raw = [.. Environment.GetCommandLineArgs().Skip(1)];
-        Pipe = string.Empty;
 
-        // using (var reader = new StreamReader(Console.OpenStandardInput()))
-        // {
-        //     Pipe = reader.ReadToEnd().Trim();
-        // }
+        using (var reader = new StreamReader(Console.OpenStandardInput()))
+        {
+            Pipe = reader.ReadToEnd().Trim();
+        }
 
         Parse();
     }
